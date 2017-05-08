@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #252830;
+}
+
+header {
+	position:fixed;
+	width:125px;
+	height:100%;
+	background-color: #375A7F;
+}
+
+header img[src="logo.png"] {
+	position: relative;
+	margin: 5px 0 0 -50px;
+	left: 50%;
+	width:100px;
+}
+
+nav {
+	text-align: center;
+	margin-top: 20px;
+}
+
+nav li a {
+	display: block;
+	color: #FFFFFF;
+	padding: 10px 0;
+	box-shadow: inset 0 0 0 0 #FFFFFF;
+	transition: color 0.5s ease, box-shadow 0.2s linear;
+}
+
+nav li a:hover {
+	display: block;
+	box-shadow: inset 125px 0 0 0 #FFFFFF;
+	color: #375A7F;
+}
+
+nav li a.active {
+	background-color: #28415B;
+}
+
+main {
+	float:right;
+	width:1241px;
+	text-align: center;
+}
+
+main input[id="search"] {
+	width: 500px;
+	padding: 10px;
+	font-size: 14px;
+	text-align: center;
+	margin: 15px 0;
+	border-radius: 4px;
+	font-size:16px;
+}
+
+main input[id="search"]:focus {
+	box-shadow: 0 0 5px 1px #FFFFFF;
+	transition: box-shadow 0.3s, border 0.3s;
+}
+
+/* Tabela de Músicas */
+main table {
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-spacing: 0;
+	border-collapse: separate;
+}
+
+main table tr:hover {
+	background-color: #353945;
+}
+
+main table th {
+	font-size: 22px;
+	padding: 10px 0;
+	background-color: #434857;
+	color: #FFFFFF;
+}
+
+main table td {
+	font-size: 18px;
+	color: #CFD2DA;
+	padding: 5px 0;
+	width: 420px;
+}
+
+main table td a {
+	display: block;
+	text-decoration: none;
+	color: #CFD2DA;
+	padding:0 10px;
+}
+
+/* Tabelas de Músicas - Bordas Arredondada */
+td:first-child {
+	border-left: 1px solid #434857;
+	border-right: 1px solid #434857;
+	border-bottom: 1px solid #434857;
+}
+
+td:last-child {
+	border-right: 1px solid #434857;
+	border-bottom: 1px solid #434857;
+}
+
+tr:first-child th:first-child {
+	border-top-left-radius: 4px;
+}
+
+tr:first-child th:last-child {
+	border-top-right-radius: 4px; 
+}
+
+tr:last-child td:first-child {
+	border-bottom-left-radius: 4px;
+	border-bottom: 1px solid #434857;
+}
+
+tr:last-child td:last-child {
+	border-bottom-right-radius: 4px;
+	border-bottom: 1px solid #434857;
+}
+
+/* music.php */
+#title-artist {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	top: 0;
+	font-size: 30px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #375A7F;
+	z-index:10;
+}
+
+#lyric {
+	position: absolute;
+	top:50px;
+	padding-bottom: 500px;
+	/*height: 350px;*/
+	width: 100%;
+	/*overflow-y: scroll;
+	overflow-x: hidden;*/
+	text-align: center;
+	line-height: 120%;
+	font-size: 60px;
+	color: #FFFFFF;
+}
